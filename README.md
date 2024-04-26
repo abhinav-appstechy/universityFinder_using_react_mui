@@ -1,8 +1,9 @@
-# React + Vite
+# Univeristy Site Finder Project Using React, MUI, Tailwind and Fuse.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is based on Univeristy Site Finder using React, Material UI, Tailwind and Fuse.js
 
-Currently, two official plugins are available:
+## Run Command
+After cloning the repo, first type command - `npm i`. After that, type command - `npm run dev`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
+Before cloning the repo, make sure you have the latest Node version installed in your system
