@@ -18,6 +18,7 @@ import College3 from "../assets/college3.jpg";
 import College4 from "../assets/college4.jpg";
 import College5 from "../assets/college5.jpg";
 import College6 from "../assets/college6.jpg";
+import { BACKEND_BASE_URL } from "../api";
 
 let imageLists = [College1, College2, College3, College4, College5, College6];
 
@@ -45,7 +46,7 @@ const UniversityFinder = () => {
   };
 
   const handleFindUniversity = (countryName) => {
-    fetch(`http://universities.hipolabs.com/search?country=${countryName}`, {
+    fetch(`${BACKEND_BASE_URL}/university-finder`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +60,7 @@ const UniversityFinder = () => {
       })
       .then((data) => {
         // console.log(data);
-        setResultantUniversities(data);
+        setResultantUniversities(data.data);
       })
       .catch((error) => {
         console.log(error);
