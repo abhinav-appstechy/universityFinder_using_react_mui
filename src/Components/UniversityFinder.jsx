@@ -58,7 +58,7 @@ const UniversityFinder = () => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setResultantUniversities(data);
       })
       .catch((error) => {
@@ -72,16 +72,16 @@ const UniversityFinder = () => {
     setUniversity(e.target.value);
     let res = fuse.search(e.target.value);
     setFuseResult(res);
-    console.log("RES-", res);
+    // console.log("RES-", res);
   };
 
   const getRandomIntegerBetweenZeroAndTwo = () => {
     return Math.floor(Math.random() * 6); // Generates random integer between 0 and 2
   };
 
-  useEffect(() => {
-    console.log("fuseResult", fuseResult.length);
-  }, [fuseResult]);
+  // useEffect(() => {
+  //   console.log("fuseResult", fuseResult.length);
+  // }, [fuseResult]);
 
   
 

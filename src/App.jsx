@@ -39,7 +39,7 @@ function App() {
       return res.json();
     })
     .then((data)=>{
-      console.log(data);
+      // console.log(data);
       setResultantUniversities(data)
     })
     .catch((error)=>{
@@ -58,9 +58,9 @@ function App() {
 
   }
 
-  useEffect(() => {
-    console.log("result",result)
-  }, [result])
+  // useEffect(() => {
+  //   console.log("result",result)
+  // }, [result])
   
 
   return (
