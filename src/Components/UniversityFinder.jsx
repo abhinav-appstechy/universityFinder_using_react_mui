@@ -47,10 +47,13 @@ const UniversityFinder = () => {
 
   const handleFindUniversity = (countryName) => {
     fetch(`${BACKEND_BASE_URL}/university-finder`, {
-      method: "GET",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify({
+        query: countryName
+      })
     })
       .then((res) => {
         if (!res.ok) {
